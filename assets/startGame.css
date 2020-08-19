@@ -1,0 +1,151 @@
+#wrapper {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: url(../images/sky.png);
+    background-position-x: 0px;
+    overflow: hidden;
+}
+
+.bird {
+    position: absolute;
+    left: 50%;
+    top: 235px;
+    margin-left: -15px;
+    background: url('../images/birds.png');
+    height: 30px;
+    width: 30px;
+    background-position-x: 0px;
+    transition: top .2s linear;
+}
+
+.start {
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    left: 50%;
+    top: 315px;
+    margin-left: -100px;
+    line-height: 60px;
+    text-align: center;
+    font-weight:bolder ;
+    transition: all .3s linear;
+}
+
+.start.start-white {
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .start.start-blue {
+    color: #09f;
+    font-size: 36px;
+  }
+
+  .scores{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 20px;
+      font-weight: bolder;
+      color: white;
+      display: none;
+      z-index: 2;
+  }
+
+  .mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: none;
+      z-index: 2;
+  }
+
+  .end {
+      position: absolute;
+      left: 50%;
+      top: 70px;
+      transform: translateX(-50%);
+      text-align: center;
+      display:none;
+      z-index: 3;
+      
+  }
+
+ .end .game-over {
+    color: red;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+
+  .end .your-results,.final-scores {
+      color: yellow;
+      margin-top: 20px;
+      font-size: 24px;
+      font-weight: bolder;
+  }
+
+  .rank-list {
+      margin-top: 20px;
+      color: #09f;
+  }
+
+  .rank-list .rank-item {
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .rank-list .rank-num {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    color: white;
+    background: #8eb9f5;
+    margin-right: 20px;
+  }
+
+  .rank-num.first {
+    background-color: #f54545;
+  }
+
+  .rank-num.second {
+    background-color: #ff8547;;
+  }
+
+  .rank-num.third {
+    background-color: #ffac38;;
+  }
+
+  .end .rank-scores {
+    display: inline-block;
+    width: 30px;
+  }
+
+  .end .restart {
+      font-size: 20px;
+      font-weight: bolder;
+      color: #09f;
+      cursor: pointer;
+  }
+
+  .pipe {
+    position: absolute;
+    width: 52px;
+   
+  }
+
+  .pipe.pipe-up {
+    top: 0;
+    background-image: url(../images/pipe2.png);
+    background-position-y: bottom;
+  }
+
+  .pipe.pipe-down {
+    bottom: 0;
+    background-image: url(../images/pipe1.png);
+  }
